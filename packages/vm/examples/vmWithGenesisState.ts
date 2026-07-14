@@ -1,0 +1,24 @@
+import { Chain } from '@silajs/common'
+import { getGenesis } from '@silajs/genesis'
+import { createAddressFromString } from '@silajs/util'
+import { createVM } from '@silajs/vm'
+
+const main = async () => {
+  const genesisState = getGenesis(Chain.SilaMainnet)
+
+  const vm = await createVM()
+  await vm.stateManager.generateCanonicalGenesis!(genesisState)
+  const accountAddress = '0x000d836201318ec6899a67540690382780743280'
+  const account = await vm.stateManager.getAccount(createAddressFromString(accountAddress))
+
+  if (account === undefined) {
+    throw new Error('Account does not exist: failed to import genesis state')
+  }
+
+  console.log(
+    `This balance for account ${accountAddress} in this chain's genesis state is ${Number(
+      account?.balance,
+    )}`,
+  )
+}
+void main()

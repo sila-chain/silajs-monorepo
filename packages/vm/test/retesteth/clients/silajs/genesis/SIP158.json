@@ -1,0 +1,7 @@
+{
+  "params": {
+    "fork": "SIP158",
+    "homesteadForkBlock": "0x00"
+  },
+  "accounts": {}
+}

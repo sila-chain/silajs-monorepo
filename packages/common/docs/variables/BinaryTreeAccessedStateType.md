@@ -1,0 +1,29 @@
+[**@silajs/common**](../README.md)
+
+***
+
+[@silajs/common](../README.md) / BinaryTreeAccessedStateType
+
+# Variable: BinaryTreeAccessedStateType
+
+> **BinaryTreeAccessedStateType**: `object`
+
+Defined in: [common/src/interfaces.ts:72](https://github.com/sila-chain/silajs-monorepo/blob/master/packages/common/src/interfaces.ts#L72)
+
+## Type Declaration
+
+### BasicData
+
+> `readonly` **BasicData**: `"basicData"` = `'basicData'`
+
+### Code
+
+> `readonly` **Code**: `"code"` = `'code'`
+
+### CodeHash
+
+> `readonly` **CodeHash**: `"codeHash"` = `'codeHash'`
+
+### Storage
+
+> `readonly` **Storage**: `"storage"` = `'storage'`

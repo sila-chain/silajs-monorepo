@@ -1,0 +1,21 @@
+[**@silajs/util**](../README.md)
+
+***
+
+[@silajs/util](../README.md) / accountBodyToSlim
+
+# Function: accountBodyToSlim()
+
+> **accountBodyToSlim**(`body`): `Uint8Array`\<`ArrayBufferLike`\>[]
+
+Defined in: [packages/util/src/account.ts:612](https://github.com/sila-chain/silajs-monorepo/blob/master/packages/util/src/account.ts#L612)
+
+## Parameters
+
+### body
+
+[`AccountBodyBytes`](../type-aliases/AccountBodyBytes.md)
+
+## Returns
+
+`Uint8Array`\<`ArrayBufferLike`\>[]

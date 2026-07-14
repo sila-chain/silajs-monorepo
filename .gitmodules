@@ -1,0 +1,9 @@
+[submodule "sila-tests"]
+	path = packages/sila-tests
+	url = https://github.com/sila-chain/tests.git
+	branch = develop
+	
+[submodule "execution-spec-tests"]
+	path = packages/execution-spec-tests
+	url = https://github.com/sila-chain/silajs/execution-spec-tests-fixtures.git
+	branch = main

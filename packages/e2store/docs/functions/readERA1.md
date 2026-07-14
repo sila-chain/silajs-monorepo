@@ -1,0 +1,21 @@
+[**@silajs/e2store**](../README.md)
+
+***
+
+[@silajs/e2store](../README.md) / readERA1
+
+# Function: readERA1()
+
+> **readERA1**(`bytes`): `Promise`\<`AsyncGenerator`\<\{ `bodyEntry`: [`e2StoreEntry`](../type-aliases/e2StoreEntry.md); `headerEntry`: [`e2StoreEntry`](../type-aliases/e2StoreEntry.md); `receiptsEntry`: [`e2StoreEntry`](../type-aliases/e2StoreEntry.md); `totalDifficultyEntry`: [`e2StoreEntry`](../type-aliases/e2StoreEntry.md); \}, `void`, `unknown`\>\>
+
+Defined in: [packages/e2store/src/era1/era1.ts:117](https://github.com/sila-chain/silajs-monorepo/blob/master/packages/e2store/src/era1/era1.ts#L117)
+
+## Parameters
+
+### bytes
+
+`Uint8Array`
+
+## Returns
+
+`Promise`\<`AsyncGenerator`\<\{ `bodyEntry`: [`e2StoreEntry`](../type-aliases/e2StoreEntry.md); `headerEntry`: [`e2StoreEntry`](../type-aliases/e2StoreEntry.md); `receiptsEntry`: [`e2StoreEntry`](../type-aliases/e2StoreEntry.md); `totalDifficultyEntry`: [`e2StoreEntry`](../type-aliases/e2StoreEntry.md); \}, `void`, `unknown`\>\>

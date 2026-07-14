@@ -1,0 +1,11 @@
+[**@silajs/util**](../README.md)
+
+***
+
+[@silajs/util](../README.md) / BIGINT\_100
+
+# Variable: BIGINT\_100
+
+> `const` **BIGINT\_100**: `bigint`
+
+Defined in: [packages/util/src/constants.ts:118](https://github.com/sila-chain/silajs-monorepo/blob/master/packages/util/src/constants.ts#L118)

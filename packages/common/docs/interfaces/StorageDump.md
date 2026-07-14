@@ -1,0 +1,13 @@
+[**@silajs/common**](../README.md)
+
+***
+
+[@silajs/common](../README.md) / StorageDump
+
+# Interface: StorageDump
+
+Defined in: [common/src/interfaces.ts:12](https://github.com/sila-chain/silajs-monorepo/blob/master/packages/common/src/interfaces.ts#L12)
+
+## Indexable
+
+\[`key`: `string`\]: `string`

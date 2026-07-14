@@ -1,0 +1,25 @@
+[**@silajs/util**](../README.md)
+
+***
+
+[@silajs/util](../README.md) / ValueEncoding
+
+# Variable: ValueEncoding
+
+> **ValueEncoding**: `object`
+
+Defined in: [packages/util/src/db.ts:17](https://github.com/sila-chain/silajs-monorepo/blob/master/packages/util/src/db.ts#L17)
+
+## Type Declaration
+
+### Bytes
+
+> `readonly` **Bytes**: `"view"` = `'view'`
+
+### JSON
+
+> `readonly` **JSON**: `"json"` = `'json'`
+
+### String
+
+> `readonly` **String**: `"string"` = `'string'`

@@ -1,0 +1,45 @@
+import { createBlock, createBlockFromBytesArray, createBlockFromRLP } from '@silajs/block'
+import { Common, Hardfork, SilaMainnet } from '@silajs/common'
+import { RLP } from '@silajs/rlp'
+import { MapDB, hexToBytes } from '@silajs/util'
+import { assert, describe, it } from 'vitest'
+
+import { Ethash } from '../src/index.ts'
+
+import { blockTestsData } from './block_tests_data.ts'
+import { invalidBlockRLP, validBlockRLP } from './ethash_block_rlp_tests.ts'
+
+import type { BlockBytes } from '@silajs/block'
+import type { PrefixedHexString } from '@silajs/util'
+
+const cacheDB = new MapDB()
+
+describe('Verify POW for valid and invalid blocks', () => {
+  it('should work', async () => {
+    const e = new Ethash(cacheDB as any)
+
+    const common = new Common({ chain: SilaMainnet, hardfork: Hardfork.Istanbul })
+
+    const genesis = createBlock({}, { common })
+    const genesisResult = await e.verifyPOW(genesis)
+    assert.isTrue(genesisResult, 'genesis block should be valid')
+
+    const validRlp = hexToBytes(validBlockRLP)
+    const validBlock = createBlockFromRLP(validRlp, { common })
+    const validBlockResult = await e.verifyPOW(validBlock)
+    assert.isTrue(validBlockResult, 'should be valid')
+
+    const invalidRlp = hexToBytes(invalidBlockRLP)
+    // Put correct amount of extraData in block extraData field so block can be deserialized
+    const values = RLP.decode(Uint8Array.from(invalidRlp)) as BlockBytes
+    values[0][12] = new Uint8Array(32)
+    const invalidBlock = createBlockFromBytesArray(values, { common })
+    const invalidBlockResult = await e.verifyPOW(invalidBlock)
+    assert.isFalse(invalidBlockResult, 'should be invalid')
+
+    const blockRlp = hexToBytes(blockTestsData.blocks[0].rlp as PrefixedHexString)
+    const block = createBlockFromRLP(blockRlp, { common })
+    const uncleBlockResult = await e.verifyPOW(block)
+    assert.isTrue(uncleBlockResult, 'should be valid')
+  })
+})
