@@ -1,6 +1,6 @@
 // cspell:ignore xprv xpub
-import { mnemonicToSeedSync } from 'sila-cryptography/bip39/index.js'
-import { HDKey } from 'sila-cryptography/hdkey.js'
+import { mnemonicToSeedSync } from 'ethereum-cryptography/bip39/index.js'
+import { HDKey } from 'ethereum-cryptography/hdkey.js'
 
 import { SilaJSErrorWithoutCode } from '@silajs/util'
 import { Wallet } from './wallet.ts'
