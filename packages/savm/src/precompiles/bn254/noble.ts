@@ -103,8 +103,8 @@ function toG2Point(input: Uint8Array) {
 }
 
 /**
- * Implementation of the `EVMBN254Interface` using the `sila-cryptography (`@noble/curves`)
- * JS library, see https://github.com/sila-chain/js-sila-cryptography.
+ * Implementation of the `EVMBN254Interface` using the `ethereum-cryptography (`@noble/curves`)
+ * JS library, see https://github.com/sila-chain/js-ethereum-cryptography.
  *
  * This is the SAVM default implementation.
  */
