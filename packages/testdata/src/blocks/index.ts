@@ -1,5 +1,5 @@
 export * from './beacon.ts'
 export * from './goerliBlocks.ts'
-export * from './sila-mainnetBlocks.ts'
+export * from './mainnetBlocks.ts'
 export * from './preLondonTestDataBlocks1RLP.ts'
 export * from './preLondonTestDataBlocks2RLP.ts'
