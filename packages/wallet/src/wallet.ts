@@ -19,9 +19,9 @@ import {
 import { sha256 } from '@noble/hashes/sha2.js'
 import { keccak_256 } from '@noble/hashes/sha3.js'
 import { base58check } from '@scure/base'
-import * as aes from 'sila-cryptography/aes.js'
-import { pbkdf2 } from 'sila-cryptography/pbkdf2.js'
-import { scrypt } from 'sila-cryptography/scrypt.js'
+import * as aes from 'ethereum-cryptography/aes.js'
+import { pbkdf2 } from 'ethereum-cryptography/pbkdf2.js'
+import { scrypt } from 'ethereum-cryptography/scrypt.js'
 import { v4 as uuidv4 } from 'uuid'
 
 import type { PrefixedHexString } from '@silajs/util'
