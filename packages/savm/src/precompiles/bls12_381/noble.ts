@@ -150,8 +150,8 @@ function BLS12_381_ToFpPoint(fpCoordinate: Uint8Array) {
 }
 
 /**
- * Implementation of the `EVMBLSInterface` using the `sila-cryptography (`@noble/curves`)
- * JS library, see https://github.com/sila-chain/js-sila-cryptography.
+ * Implementation of the `EVMBLSInterface` using the `ethereum-cryptography (`@noble/curves`)
+ * JS library, see https://github.com/sila-chain/js-ethereum-cryptography.
  *
  * This is the SAVM default implementation.
  */
