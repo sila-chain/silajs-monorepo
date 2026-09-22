@@ -39,7 +39,7 @@ import {
   waitReady as waitReadyPolkadotSha256,
   sha256 as wasmSha256,
 } from '@polkadot/wasm-crypto'
-import { KZG as microEthKZG } from 'micro-sil-signer/kzg.js'
+import { KZG as microEthKZG } from 'micro-eth-signer/kzg.js'
 import * as promClient from 'prom-client'
 import * as yargs from 'yargs'
 import { hideBin } from 'yargs/helpers'
