@@ -641,7 +641,6 @@
     "ScottyPoi",
     "Scotty",
     "snappystream",
-    "ethjs",
     "Unsnappy",
     "unsnappy",
     "ethportal",
@@ -652,12 +651,20 @@
     "getpayload",
     "ckzg",
     "Damgård",
-    "viem",
     "snobal",
     "glamsterdam",
     "awasm",
     "deopts",
     "IMPLS",
-    "impls"
+    "impls",
+    "Sila",
+    "sila",
+    "silajs",
+    "Silajs",
+    "SILAJS",
+    "savm",
+    "SAVM",
+    "eips",
+    "EIPs"
   ]
 }
