@@ -5,7 +5,7 @@ import { createBlockchain } from '@silajs/blockchain'
 import { RLP } from '@silajs/rlp'
 import { createLegacyTxFromBytesArray, createTxFromSerializedData } from '@silajs/tx'
 import { Account, bytesToHex, unprefixedHexToBytes } from '@silajs/util'
-import { keccak256 } from 'sila-cryptography/keccak'
+import { keccak256 } from 'ethereum-cryptography/keccak'
 
 import { BlockBuilder } from '../../dist/cjs/buildBlock.js'
 import { VM } from '../../dist/cjs/index.js'
