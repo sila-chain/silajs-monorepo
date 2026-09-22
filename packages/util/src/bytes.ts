@@ -447,7 +447,7 @@ export const randomBytes = (length: number): Uint8Array => {
 }
 
 /**
- * This mirrors the functionality of the `sila-cryptography` export except
+ * This mirrors the functionality of the `ethereum-cryptography` export except
  * it skips the check to validate that every element of `arrays` is indeed a `uint8Array`
  * Can give small performance gains on large arrays
  * @param {Uint8Array[]} arrays an array of Uint8Arrays
@@ -524,7 +524,7 @@ export { utf8ToBytes } from '@noble/hashes/utils.js'
 
 /**
  * @notice Converts a Uint8Array to a UTF-8 string.
- * Implementation copied from sila-cryptography https://github.com/sila-chain/js-sila-cryptography/blob/31f980b2847545d33268f2510ba38a3836202a44/src/utils.ts#L22-L27
+ * Implementation copied from ethereum-cryptography https://github.com/sila-chain/js-ethereum-cryptography/blob/31f980b2847545d33268f2510ba38a3836202a44/src/utils.ts#L22-L27
  * @param {Uint8Array} bytes - The input Uint8Array to convert.
  * @returns {string} The UTF-8 string.
  * @throws {TypeError} If the input is not a Uint8Array.
@@ -539,7 +539,7 @@ export function bytesToUtf8(bytes: Uint8Array): string {
 
 /**
  * @notice Compares two Uint8Arrays and returns true if they are equal.
- * Implementation copied from sila-cryptography https://github.com/sila-chain/js-sila-cryptography/blob/main/src/utils.ts#L35-L45
+ * Implementation copied from ethereum-cryptography https://github.com/sila-chain/js-ethereum-cryptography/blob/main/src/utils.ts#L35-L45
  * @param {Uint8Array} a - The first Uint8Array to compare.
  * @param {Uint8Array} b - The second Uint8Array to compare.
  * @returns {boolean} True if the Uint8Arrays are equal, false otherwise.

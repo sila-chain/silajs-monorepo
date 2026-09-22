@@ -1,5 +1,5 @@
 import { SilaJSErrorWithoutCode, bytesToHex, equalsBytes } from '@silajs/util'
-import * as ssz from 'micro-sil-signer/ssz.js'
+import * as ssz from 'micro-eth-signer/ssz.js'
 
 import { EraTypes, parseEntry, readEntry } from '../index.ts'
 
@@ -77,7 +77,7 @@ export const readBeaconState = async (eraData: Uint8Array) => {
     return ssz.AltairBeaconState.decode(data.data as Uint8Array)
   else if (stateSlot < ssz.ForkSlots.Capella)
     return ssz.BellatrixBeaconState.decode(data.data as Uint8Array)
-  else if (stateSlot < ssz.ForkSlots.SilaDeneb)
+  else if (stateSlot < ssz.ForkSlots.Deneb)
     return ssz.CapellaBeaconState.decode(data.data as Uint8Array)
   else return ssz.ETH2_TYPES.BeaconState.decode(data.data as Uint8Array)
 }
@@ -110,7 +110,7 @@ export const readBeaconBlock = async (eraData: Uint8Array, offset: number) => {
     return ssz.AltairSignedBeaconBlock.decode(data.data as Uint8Array)
   else if (slot < ssz.ForkSlots.Capella)
     return ssz.BellatrixSignedBeaconBlock.decode(data.data as Uint8Array)
-  else if (slot < ssz.ForkSlots.SilaDeneb)
+  else if (slot < ssz.ForkSlots.Deneb)
     return ssz.CapellaSignedBeaconBlock.decode(data.data as Uint8Array)
   else return ssz.ETH2_TYPES.SignedBeaconBlock.decode(data.data as Uint8Array)
 }

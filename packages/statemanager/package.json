@@ -61,6 +61,6 @@
     "@silajs/block": "^10.1.2",
     "@silajs/genesis": "^10.1.2",
     "@types/debug": "^4.1.12",
-    "micro-sil-signer": "0.15.0"
+    "micro-eth-signer": "0.15.0"
   }
 }

@@ -8,8 +8,8 @@ import {
 } from '@silajs/util'
 import { keccak_256 } from '@noble/hashes/sha3.js'
 import { base64 } from '@scure/base'
-import { decrypt } from 'sila-cryptography/aes.js'
-import { pbkdf2Sync } from 'sila-cryptography/pbkdf2.js'
+import { decrypt } from 'ethereum-cryptography/aes.js'
+import { pbkdf2Sync } from 'ethereum-cryptography/pbkdf2.js'
 import { md5 } from 'js-md5'
 
 import { Wallet } from './wallet.ts'

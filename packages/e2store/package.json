@@ -60,7 +60,7 @@
     "@silajs/rlp": "^10.1.2",
     "@silajs/util": "^10.1.2",
     "level": "^9.0.0",
-    "micro-sil-signer": "^0.15.0",
+    "micro-eth-signer": "^0.15.0",
     "snappyjs": "^0.7.0"
   },
   "devDependencies": {
