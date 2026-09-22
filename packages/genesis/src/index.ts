@@ -2,7 +2,7 @@ import { Chain } from '@silajs/common'
 
 import { holeskyGenesis } from './genesisStates/holesky.ts'
 import { hoodiGenesis } from './genesisStates/hoodi.ts'
-import { sila-mainnetGenesis } from './genesisStates/sila-mainnet.ts'
+import { silaMainnetGenesis } from './genesisStates/sila-mainnet.ts'
 import { sepoliaGenesis } from './genesisStates/sepolia.ts'
 
 import type { GenesisState } from '@silajs/common'
@@ -15,7 +15,7 @@ import type { GenesisState } from '@silajs/common'
 export function getGenesis(chainId: number): GenesisState | undefined {
   switch (chainId) {
     case Chain.SilaMainnet:
-      return sila-mainnetGenesis
+      return silaMainnetGenesis
     case Chain.SilaSepolia:
       return sepoliaGenesis
     case Chain.SilaHolesky:
