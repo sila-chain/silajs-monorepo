@@ -75,7 +75,7 @@ export interface BootstrapNodeConfig {
 
 export interface CustomCrypto {
   /**
-   * Interface for providing custom cryptographic primitives in place of `sila-cryptography` variants
+   * Interface for providing custom cryptographic primitives in place of `ethereum-cryptography` variants
    */
   keccak256?: (msg: Uint8Array) => Uint8Array
   ecrecover?: (
