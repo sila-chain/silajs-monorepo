@@ -351,8 +351,8 @@ export interface EVMOpts {
   customPrecompiles?: CustomPrecompile[]
 
   /**
-   * For the SIP-2537 BLS Precompiles, the native JS `sila-cryptography` (`@noble/curves`)
-   * https://github.com/sila-chain/js-sila-cryptography BLS12-381 curve implementation
+   * For the SIP-2537 BLS Precompiles, the native JS `ethereum-cryptography` (`@noble/curves`)
+   * https://github.com/sila-chain/js-ethereum-cryptography BLS12-381 curve implementation
    * is used (see `noble.ts` file in the `precompiles/bls12_381/` folder).
    *
    * To use an alternative implementation this option can be used by passing
@@ -373,8 +373,8 @@ export interface EVMOpts {
   bls?: EVMBLSInterface
 
   /**
-   * For the SIP-196/SIP-197 BN254 (alt_BN128) EC precompiles, the native JS `sila-cryptography`
-   * (`@noble/curves`) https://github.com/sila-chain/js-sila-cryptography BN254 curve implementation
+   * For the SIP-196/SIP-197 BN254 (alt_BN128) EC precompiles, the native JS `ethereum-cryptography`
+   * (`@noble/curves`) https://github.com/sila-chain/js-ethereum-cryptography BN254 curve implementation
    * is used (see `noble.ts` file in the `precompiles/bn254/` folder).
    *
    * To use an alternative implementation this option can be used by passing
